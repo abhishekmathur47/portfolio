@@ -68,8 +68,8 @@ export default function Portfolio() {
               <h4 className="text-[1.5rem] font-bold mb-2">NFT Marketplace UI Design</h4>
               <p className="text-[1.5rem] text-gray-500 mb-3">Redesigned creator, artist, and collection pages to improve user engagement and visual storytelling. Used Figma for prototyping and collaborated closely with devs to hand off responsive designs.</p>
               <button
-               onClick={() => setShowMetaJungleModal(true)}
-                className="bg-black text-white px-6 py-2 rounded hover:bg-gray-800 text-[1rem]"
+                onClick={() => setShowMetaJungleModal(true)}
+                className="bg-black text-white px-6 py-2 rounded-full hover:bg-gray-500 text-[1.1rem]"
               >
                 Read Case Study →
               </button>
