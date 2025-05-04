@@ -14,6 +14,7 @@ const geistMono = Geist_Mono({
 const bricolage = Bricolage_Grotesque({
   subsets: ["latin"],
   variable: "--font-bricolage",
+  weight:"300",
   display: "swap",
 });
 
@@ -26,7 +27,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${bricolage.variable} ${geistSans.variable} ${geistMono.variable} font-bricolage antialiased`}
+        className={`${bricolage.variable} ${geistSans.variable} ${geistMono.variable} antialiased`}
 
       >
         {children}
