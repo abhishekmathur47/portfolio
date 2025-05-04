@@ -1,4 +1,24 @@
+"use client";
+
+import MetaJungleModal from "@/components/MetaJungleModal.jsx";
+import { useState } from 'react';
+import { useEffect } from 'react';
 export default function Portfolio() {
+
+  const [showMetaJungleModal, setShowMetaJungleModal] = useState(false);
+
+  useEffect(() => {
+    if (showMetaJungleModal) {
+      document.body.classList.add("overflow-hidden");
+    } else {
+      document.body.classList.remove("overflow-hidden");
+    }
+  
+    return () => document.body.classList.remove("overflow-hidden");
+  }, [showMetaJungleModal]);
+
+
+
   return (
     <main className="font-sans">
       {/* Navbar */}
@@ -47,16 +67,16 @@ export default function Portfolio() {
             <div>
               <h4 className="text-[1.5rem] font-bold mb-2">NFT Marketplace UI Design</h4>
               <p className="text-[1.5rem] text-gray-500 mb-3">Redesigned creator, artist, and collection pages to improve user engagement and visual storytelling. Used Figma for prototyping and collaborated closely with devs to hand off responsive designs.</p>
-              <a
-                href="https://www.figma.com/design/yyiBXpxCaS3sPfF70EKFSb/MetaJungle-2.0"
-                target="_blank"
-                className="text-blue-600 text-[1.5rem]  underline text-sm"
+              <button
+               onClick={() => setShowMetaJungleModal(true)}
+                className="bg-black text-white px-6 py-2 rounded hover:bg-gray-800 text-[1rem]"
               >
-                View Figma Design →
-              </a>
+                Read Case Study →
+              </button>
             </div>
           </div>
         </div>
+        <MetaJungleModal isOpen={showMetaJungleModal} onClose={() => setShowMetaJungleModal(false)} />
       </section>
 
       {/* Contact Section */}
