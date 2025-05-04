@@ -2,22 +2,24 @@ export default function Portfolio() {
   return (
     <main className="font-sans">
       {/* Navbar */}
-      <nav className="fixed top-0 left-0 w-full bg-white shadow-md z-50">
-        <div className="max-w-6xl mx-auto flex justify-between items-center px-4 py-3">
+      <nav className="w-full shadow-md z-50">
+        <div className="w-[90%] mx-auto flex justify-between items-center px-8 py-4">
           <h1 className="text-xl font-bold">Abhishek Mathur</h1>
-          <div className="space-x-6 text-sm">
-            <a href="#about" className="hover:underline">About</a>
-            <a href="#work" className="hover:underline">Work</a>
-            <a href="#contact" className="hover:underline">Contact</a>
+          <div className="space-x-8 text-base">
+            {/* <a href="#about" className="hover:underline">About</a> */}
+            {/* <a href="#work" className="hover:underline">Work</a> */}
+            <a href="#contact" className="hover:underline">LinkedIn</a>
           </div>
         </div>
       </nav>
 
       {/* Hero Section */}
-      <section className="min-h-screen flex flex-col justify-center items-center text-center px-4 pt-20" id="hero">
-        <h2 className="text-4xl md:text-6xl font-mono font-bold mb-4">UI/UX Designer & Frontend Developer</h2>
-        <p className="text-lg md:text-xl text-gray-600 max-w-xl">Bringing intuitive design and responsive code together to build seamless digital experiences.</p>
-        <a href="#work" className="mt-6 inline-block bg-black text-white px-6 py-3 rounded-full hover:bg-gray-800">View My Work</a>
+      <section className="min-h-screen flex flex-col justify-center items-left text-center px-4 pt-20" id="hero">
+        <h1 className="text-lg md:text-3xl font-grotesque text-left  ml-[20%] mb-4">Greting,<br />I'm Abhishek</h1>
+        <h1 className="text-lg md:text-3xl font-sans text-left  ml-[20%] mb-4">Greting,<br />I'm Abhishek</h1>
+        <h2 className="text-4xl md:text-6xl font-mono text-left font-bold ml-[20%] mb-4">Frontend Developer<br />& UI/UX Designer</h2>
+        {/* <p className="text-lg md:text-xl text-gray-600 max-w-xl">Bringing intuitive design and responsive code together to build seamless digital experiences.</p> */}
+        {/* <a href="#work" className="mt-6 inline-block bg-black text-white px-6 py-3 rounded-full hover:bg-gray-800">View My Work</a> */}
       </section>
 
       {/* About Section */}
