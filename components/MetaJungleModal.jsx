@@ -73,26 +73,27 @@ export default function MetaJungleModal({ isOpen, onClose }) {
                 Redesigning Core Interfaces for a Web3 Marketplace
               </h1>
               <p className="text-[1.2rem] text-gray-500 leading-tight mt-2">
-                MetaJungle is a Web3 NFT marketplace that needed a redesign of
-                its creator, artist, and collection pages to enhance user trust,
-                engagement, and clarity. The original UI suffered from poor
-                visual hierarchy, inconsistent layouts, and limited scalability
-                across breakpoints, making it difficult for users to distinguish
-                between creators and collections or explore rich media content.
-                I led the redesign using Figma to develop a modular, responsive
-                interface system aligned with MetaJungle’s brand identity,
-                prioritizing structure, usability, and visual consistency.
-                <br />
-                <br /> In addition to design, I actively contributed to the
-                frontend implementation using React and Tailwind CSS. One of the
-                key technical challenges was handling highly variable content
-                types and layouts across devices without breaking the
-                experience. I addressed this by building reusable, utility-first
-                component structures and collaborating closely with developers
-                to ensure fidelity between design and code. This project
-                reflects my hybrid ability to think like a designer while
-                delivering clean, scalable frontend code optimized for
-                performance and maintainability.
+                MetaJungle is a Web3 NFT marketplace that empowers users to
+                explore, track, and manage NFTs through features like wallet
+                reports, creator insights, and collection-level views. The
+                existing UI lacked clarity and consistency, making it difficult
+                for users to distinguish between creators and collections or
+                engage with dynamic NFT content. I led a full UI overhaul
+                focused on improving visual hierarchy, usability, and responsive
+                behavior across screen sizes. Using Figma, I developed a modular
+                design system and scalable layout framework aligned with
+                MetaJungle’s brand and user goals.<br /><br /> In parallel, I worked on the
+                frontend implementation using React and Tailwind CSS,
+                collaborating closely with developers integrating GraphQL APIs,
+                blockchain indexers, and a scalable backend powered by AWS. One
+                of the key challenges was adapting the UI to handle high-volume
+                data — over 20 million blockchain transactions indexed via
+                Cassandra, MongoDB, and Ethereum. I helped translate complex
+                wallet and asset data into digestible, user-friendly visuals,
+                optimizing both layout logic and component structure for
+                performance and maintainability. This project reflects my
+                ability to own both design and frontend engineering in a
+                product-oriented environment.
               </p>
             </div>
             <div className="col-span-2 text-[1.2rem] text-gray-800">
