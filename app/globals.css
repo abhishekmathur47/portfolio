@@ -5,10 +5,7 @@
 @tailwind utilities;
 
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+
 
 @theme inline {
   --color-background: var(--background);
@@ -20,8 +17,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #FAFAF8;
+    --foreground: #1F1F1F;
   }
 }
 
@@ -31,3 +28,15 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+
+/* colors: {
+  highlight: '#384C37',
+  textPrimary: '#1F1F1F', //Dark Charcoal : Primary text
+  textSecondary: '#555555', //Charcoal : For subtitles, meta text //Deep Sage Green : Used for buttons, headings, links
+  surface: '#F0F0EC', // Soft Bone White : Card background        
+  lightGreen: '#6B8E5E', //Moss Green : 	Soft highlight gradient
+  background: '#FAFAF8', // Soft Bone White : Background
+  link: '#D6B95A', //Dusty Gold : Used for hover or small UI highlights
+  deepNavy: '#2B3A42', //Secondary Navy : Card headers, contrast blocks
+},
+}, */

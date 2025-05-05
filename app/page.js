@@ -13,7 +13,7 @@ export default function Portfolio() {
     } else {
       document.body.classList.remove("overflow-hidden");
     }
-  
+
     return () => document.body.classList.remove("overflow-hidden");
   }, [showMetaJungleModal]);
 
@@ -22,19 +22,17 @@ export default function Portfolio() {
   return (
     <main className="font-sans">
       {/* Navbar */}
-      <nav className="w-full shadow-md z-50">
+      {/* <nav className="w-full shadow-md z-50 bg-[#384C37] text-[#F0F0EC]">
         <div className="w-[90%] mx-auto flex justify-between items-center px-8 py-4">
           <h1 className="text-xl font-bold">Abhishek Mathur</h1>
           <div className="space-x-8 text-base">
-            {/* <a href="#about" className="hover:underline">About</a> */}
-            {/* <a href="#work" className="hover:underline">Work</a> */}
             <a href="#contact" className="hover:underline">LinkedIn</a>
           </div>
         </div>
-      </nav>
+      </nav> */}
 
       {/* Hero Section */}
-      <section className="min-h-screen flex flex-col justify-center items-left text-center px-4 pt-20" id="hero">
+      <section className="min-h-screen flex flex-col justify-center items-left text-center px-4 pt-20 bg-[#384C37] text-[#F0F0EC]" id="hero">
         <h1 className="text-lg md:text-[2.5rem] font-bricolage leading-tight text-left  ml-[25%] mb-4">Greeting,<br />I'm Abhishek Mathur</h1>
         <h2 className="text-4xl md:text-[6rem] font-mono text-left font-bold ml-[20%] mb-4">- Frontend Developer<br />& UI/UX Designer</h2>
         {/* <p className="text-lg md:text-xl text-gray-600 max-w-xl">Bringing intuitive design and responsive code together to build seamless digital experiences.</p> */}
@@ -42,18 +40,24 @@ export default function Portfolio() {
       </section>
 
       {/* About Section */}
-      <section className="py-24 px-4 bg-gray-50" id="about">
-        <div className="max-w-4xl mx-auto text-center">
-          <h3 className="text-[2.5rem] font-semibold font-bricolage text-[#0a0a0a] mb-6">About Me</h3>
-          <p className="text-[1.5rem] text-gray-700 leading-relaxed">I’m a self-taught UI/UX designer with experience in frontend development. I’ve built and designed multiple interfaces like the creator, artist, and collection pages for MetaJungle, showcasing a fusion of visual design and technical implementation using Figma, React, and Tailwind.</p>
-          <p className="mt-4 text-[1.5rem] text-gray-500">Tools:<br /> Figma, Next.js, Tailwind CSS, Framer Motion, GitHub</p>
+      <section className=" py-24 px-4" id="about">
+        <div className="flex flex-col justify-end gap-8 items-left border-2 border-black max-w-4xl mx-auto text-center">
+          <div className="border-2 border-red-800 w-fit ">
+            <h3 className="text-[2.5rem] font-semibold font-bricolage text-[#0a0a0a]">About Me</h3>
+          </div>
+          <div>
+            <p className="text-[1.5rem] leading-relaxed tracking-tight">Originally from India, I began my tech career there before moving to the U.S. in 2021 to pursue a Master’s in Information Technology at Arizona State University. I worked across multiple regions, including the Midwest, gaining global experience in building design-led, scalable frontend systems. Now back in India, I continue to bring that international perspective into every product I design and develop. <br /> <br /> Whether I’m sketching out component systems or refining visual hierarchies, I enjoy creating interfaces that feel intuitive, purposeful, and globally inspired.</p>
+          </div>
+          <div>
+            <p className="mt-4 text-[1.5rem] text-[#555555]">Tools:<br /> Figma, Next.js, Tailwind CSS, Framer Motion, GitHub</p>
+          </div>
         </div>
       </section>
 
       {/* Work Section */}
-      <section className="py-24 px-4" id="work">
+      <section className="py-24 px-4 bg-[#F0F0EC] w-[80%] mx-auto rounded-xl" id="work">
         <div className="max-w-5xl mx-auto">
-          <h3 className="text-[2.5rem] font-semibold font-bricolage text-center mb-12">Featured Project: MetaJungle</h3>
+          <h3 className="text-[2.5rem] font-semibold font-bricolage text-center text-[#D6B95A] mb-12">Featured Project: MetaJungle</h3>
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div><p>Metajungle screenshot</p>
               {/* <Image
@@ -66,10 +70,10 @@ export default function Portfolio() {
             </div>
             <div>
               <h4 className="text-[1.5rem] font-bold mb-2">NFT Marketplace UI Design</h4>
-              <p className="text-[1.5rem] text-gray-500 mb-3">Redesigned creator, artist, and collection pages to improve user engagement and visual storytelling. Used Figma for prototyping and collaborated closely with devs to hand off responsive designs.</p>
+              <p className="text-[1.5rem] mb-3">Redesigned creator, artist, and collection pages to improve user engagement and visual storytelling. Used Figma for prototyping and collaborated closely with devs to hand off responsive designs.</p>
               <button
                 onClick={() => setShowMetaJungleModal(true)}
-                className="bg-black text-white px-6 py-2 rounded-full hover:bg-gray-500 text-[1.1rem]"
+                className="bg-gradient-to-bl from-[#384C37] to-[#6B8E5E] text-[#F0F0EC] px-6 py-2 rounded-full hover:bg-gradient-to-br from-[#384C37] to- text-[1.1rem]"
               >
                 Read Case Study →
               </button>
@@ -80,7 +84,7 @@ export default function Portfolio() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-24 px-4 bg-gray-100" id="contact">
+      <section className="py-24 px-4 " id="contact">
         <div className="max-w-xl mx-auto text-center">
           <h3 className="text-3xl font-semibold mb-6">Let’s Connect</h3>
           <p className="mb-4 text-gray-700">Feel free to reach out for freelance work, collaboration, or just to chat design & dev!</p>

@@ -39,7 +39,7 @@ export default function MetaJungleModal({ isOpen, onClose }) {
               {/* External Link */}
               <div className="text-[1.2rem] text-gray-800">
                 <h4 className="font-bold mb-4">Figma Design</h4>
-                <div className="hover:text-gray-800 text-gray-500">
+                <div className="hover:text-[#D6B95A] text-gray-500">
                   <a
                     href="https://www.figma.com/design/yyiBXpxCaS3sPfF70EKFSb/MetaJungle-2.0"
                     target="_blank"
