@@ -11,13 +11,17 @@ export default function MetaJungleModal({ isOpen, onClose }) {
       <div className="w-full mx-auto relative">
         {/* Modal Content */}
         <div className="flex flex-col-2 items-left">
+          {/* details wrapper */}
           <div className="flex flex-col w-[20%] pt-[5vw] pr-[2vw] pb-[1vw] pl-[3vw] h-screen justify-between">
             <div className="flex flex-col items-left ">
+              {/* Case Study Name */}
               <div>
                 <p className="text-[4rem] text-[#0a0a0a] tracking-tight font-bricolage mb-4 ">
                   MetaJungle
                 </p>
               </div>
+
+              {/* My Role */}
               <div className="text-[1.2rem] text-gray-800 mb-16">
                 <h4 className="font-semibold mb-4">Role & Responsibilities</h4>
                 <ul className="list-none list-inside text-[1rem] space-y-[2vh]">
@@ -31,6 +35,8 @@ export default function MetaJungleModal({ isOpen, onClose }) {
                   </li>
                 </ul>
               </div>
+
+              {/* External Link */}
               <div className="text-[1.2rem] text-gray-800">
                 <h4 className="font-bold mb-4">Figma Design</h4>
                 <div className="hover:text-gray-800 text-gray-500">
@@ -44,55 +50,66 @@ export default function MetaJungleModal({ isOpen, onClose }) {
                 </div>
               </div>
             </div>
+
+            {/* Close Button */}
             <div>
-              {/* Close Button */}
               <button
                 onClick={onClose}
-                className="text-[1.2rem] text-gray-500 hover:text-gray-800"
+                className="text-[1.5rem] text-gray-500 hover:text-gray-800"
               >
                 Close x
               </button>
             </div>
           </div>
-          <div className="grid grid-cols-[0.75fr_1fr] gap-[9vw] px-[3vw] py-[6vw]">
-            <h1 className="text-[1.8rem] text-[#333333] tracking-tight mb-4 ">
-              NFT Marketplace UI Redesign
-            </h1>
-            <p className="text-[1.2rem] text-gray-500 leading-tight mt-2 ">
-              MetaJungle is a Web3 NFT marketplace that needed a redesign of its
-              creator, artist, and collection pages to enhance user trust,
-              engagement, and clarity. The original UI suffered from poor visual
-              hierarchy, inconsistent layouts, and limited scalability across
-              breakpoints, making it difficult for users to distinguish between
-              creators and collections or explore rich media content. I led the
-              redesign using Figma to develop a modular, responsive interface
-              system aligned with MetaJungle’s brand identity, prioritizing
-              structure, usability, and visual consistency.
-              <br />
-              <br /> In addition to design, I actively contributed to the
-              frontend implementation using React and Tailwind CSS. One of the
-              key technical challenges was handling highly variable content
-              types and layouts across devices without breaking the experience.
-              I addressed this by building reusable, utility-first component
-              structures and collaborating closely with developers to ensure
-              fidelity between design and code. This project reflects my hybrid
-              ability to think like a designer while delivering clean, scalable
-              frontend code optimized for performance and maintainability.
-            </p>
+
+          {/* content wrapper */}
+          <div
+            className="overflow-y-auto max-h-[100vh] grid gap-y-[1.5vw]  px-[3vw] py-[6vw]"
+            fs-scrolldisable-element="preserve"
+          >
+            {/* Details header */}
+            <div className="grid grid-cols-[0.75fr_1fr] gap-[9vw] mb-[2rem]">
+              <h1 className="text-[1.8rem] text-[#333333] tracking-tight">
+                Redesigning Core Interfaces for a Web3 Marketplace
+              </h1>
+              <p className="text-[1.2rem] text-gray-500 leading-tight mt-2">
+                MetaJungle is a Web3 NFT marketplace that needed a redesign of
+                its creator, artist, and collection pages to enhance user trust,
+                engagement, and clarity. The original UI suffered from poor
+                visual hierarchy, inconsistent layouts, and limited scalability
+                across breakpoints, making it difficult for users to distinguish
+                between creators and collections or explore rich media content.
+                I led the redesign using Figma to develop a modular, responsive
+                interface system aligned with MetaJungle’s brand identity,
+                prioritizing structure, usability, and visual consistency.
+                <br />
+                <br /> In addition to design, I actively contributed to the
+                frontend implementation using React and Tailwind CSS. One of the
+                key technical challenges was handling highly variable content
+                types and layouts across devices without breaking the
+                experience. I addressed this by building reusable, utility-first
+                component structures and collaborating closely with developers
+                to ensure fidelity between design and code. This project
+                reflects my hybrid ability to think like a designer while
+                delivering clean, scalable frontend code optimized for
+                performance and maintainability.
+              </p>
+            </div>
+            <div className="col-span-2 text-[1.2rem] text-gray-800">
+              <h4 className="font-bold text-xl mb-4">Design Goals</h4>
+              <ul className="list-none list-inside text-[1rem] space-y-[2vh]">
+                <li>
+                  Scalable layout for creator, artist, and collection views
+                </li>
+                <li>Strong hierarchy and improved mobile experience</li>
+                <li>Reusable UI components for faster development</li>
+                <li>Consistent visual language with branding elements</li>
+              </ul>
+            </div>
           </div>
         </div>
 
-        <section className="space-y-6 text-gray-800 text-lg leading-relaxed">
-          <div>
-            <h4 className="font-bold text-xl mb-1">Design Goals</h4>
-            <ul className="list-disc list-inside">
-              <li>Scalable layout for creator, artist, and collection views</li>
-              <li>Strong hierarchy and improved mobile experience</li>
-              <li>Reusable UI components for faster development</li>
-              <li>Consistent visual language with branding elements</li>
-            </ul>
-          </div>
-
+        {/* <section className="space-y-6 text-gray-800 text-lg leading-relaxed">
           <div>
             <h4 className="font-bold text-xl mb-1">Design Process</h4>
             <p>
@@ -123,7 +140,7 @@ export default function MetaJungleModal({ isOpen, onClose }) {
               streamlining product development across teams.
             </p>
           </div>
-        </section>
+        </section> */}
       </div>
     </div>
   );
