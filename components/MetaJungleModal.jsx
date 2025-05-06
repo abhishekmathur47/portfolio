@@ -7,7 +7,7 @@ export default function MetaJungleModal({ isOpen, onClose }) {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 bg-white overflow-y-auto z-[9999]">
+    <div className="fixed inset-0 bg-[#FAFAF8] overflow-y-auto z-[9999]">
       <div className="w-full mx-auto relative">
         {/* Modal Content */}
         <div className="flex flex-col-2 items-left">
@@ -16,13 +16,13 @@ export default function MetaJungleModal({ isOpen, onClose }) {
             <div className="flex flex-col items-left ">
               {/* Case Study Name */}
               <div>
-                <p className="text-[4rem] text-[#0a0a0a] tracking-tight font-bricolage mb-4 ">
+                <p className="text-[4rem] text-[#1F1F1F] tracking-tight font-bricolage mb-4 ">
                   MetaJungle
                 </p>
               </div>
 
               {/* My Role */}
-              <div className="text-[1.2rem] text-gray-800 mb-16">
+              <div className="text-[1.2rem] text-[#1F1F1F] mb-16">
                 <h4 className="font-semibold mb-4">Role & Responsibilities</h4>
                 <ul className="list-none list-inside text-[1rem] space-y-[2vh]">
                   <li>UI/UX Designer using Figma</li>
@@ -37,9 +37,9 @@ export default function MetaJungleModal({ isOpen, onClose }) {
               </div>
 
               {/* External Link */}
-              <div className="text-[1.2rem] text-gray-800">
+              <div className="text-[1.2rem] text-[#1F1F1F]">
                 <h4 className="font-bold mb-4">Figma Design</h4>
-                <div className="hover:text-[#D6B95A] text-gray-500">
+                <div className="hover:text-[#D6B95A] text-[#1F1F1F]">
                   <a
                     href="https://www.figma.com/design/yyiBXpxCaS3sPfF70EKFSb/MetaJungle-2.0"
                     target="_blank"
@@ -55,7 +55,7 @@ export default function MetaJungleModal({ isOpen, onClose }) {
             <div>
               <button
                 onClick={onClose}
-                className="text-[1.5rem] text-gray-500 hover:text-gray-800"
+                className="text-[1.5rem] text-[#555555] hover:text-[#1F1F1F]"
               >
                 Close x
               </button>
@@ -69,10 +69,10 @@ export default function MetaJungleModal({ isOpen, onClose }) {
           >
             {/* Details header */}
             <div className="grid grid-cols-[0.75fr_1fr] gap-[9vw] mb-[2rem]">
-              <h1 className="text-[1.8rem] text-[#333333] tracking-tight">
+              <h1 className="text-[1.8rem] text-[#1F1F1F] tracking-tight">
                 Redesigning Core Interfaces for a Web3 Marketplace
               </h1>
-              <p className="text-[1.2rem] text-gray-500 leading-tight mt-2">
+              <p className="text-[1.2rem] text-[#555555] leading-tight mt-2">
                 MetaJungle is a Web3 NFT marketplace that empowers users to
                 explore, track, and manage NFTs through features like wallet
                 reports, creator insights, and collection-level views. The

@@ -40,22 +40,28 @@ export default function Portfolio() {
       </section>
 
       {/* About Section */}
-      <section className=" py-24 px-4" id="about">
-        <div className="flex flex-col justify-end gap-8 items-left border-2 border-black max-w-4xl mx-auto text-center">
-          <div className="border-2 border-red-800 w-fit ">
-            <h3 className="text-[2.5rem] font-semibold font-bricolage text-[#0a0a0a]">About Me</h3>
-          </div>
-          <div>
-            <p className="text-[1.5rem] leading-relaxed tracking-tight">Originally from India, I began my tech career there before moving to the U.S. in 2021 to pursue a Master’s in Information Technology at Arizona State University. I worked across multiple regions, including the Midwest, gaining global experience in building design-led, scalable frontend systems. Now back in India, I continue to bring that international perspective into every product I design and develop. <br /> <br /> Whether I’m sketching out component systems or refining visual hierarchies, I enjoy creating interfaces that feel intuitive, purposeful, and globally inspired.</p>
-          </div>
-          <div>
-            <p className="mt-4 text-[1.5rem] text-[#555555]">Tools:<br /> Figma, Next.js, Tailwind CSS, Framer Motion, GitHub</p>
+      <section className="w-full bg-[radial-gradient(circle,_rgba(107,142,94,0.25),_transparent)]  py-24 px-4" id="about">
+        <div className="flex flex-col-2 items-left">
+          <div className="flex flex-col w-[20%] pt-[5vw] pr-[2vw] pb-[1vw] pl-[3vw] h-screen justify-between">
+            {/* Heading */}
+            <div className="w-fit ">
+              <h3 className="text-[2.5rem] font-semibold font-bricolage text-[#0a0a0a]">About Me</h3>
+            </div>
+            {/* Content */}
+            <div className="border-2 border-blue-600">
+              <div>
+                <p className="text-[1.5rem] leading-relaxed tracking-tight text-left">Originally from India, I began my tech career there before moving to the U.S. in 2021 to pursue a Master’s in Information Technology at Arizona State University. I worked across multiple regions, including the Midwest, gaining global experience in building design-led, scalable frontend systems. Now back in India, I continue to bring that international perspective into every product I design and develop. <br /> <br /> Whether I’m sketching out component systems or refining visual hierarchies, I enjoy creating interfaces that feel intuitive, purposeful, and globally inspired.</p>
+              </div>
+              <div>
+                <p className="mt-4 text-[1.5rem] text-[#555555]">Tools:<br /> Figma, Next.js, Tailwind CSS, Framer Motion, GitHub</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Work Section */}
-      <section className="py-24 px-4 bg-[#F0F0EC] w-[80%] mx-auto rounded-xl" id="work">
+      <section className="py-24 px-4 bg-linear-to-bl text-[#F0F0EC] from-[#6B8E5E] to-[#384C37] w-[80%] mx-auto rounded-xl" id="work">
         <div className="max-w-5xl mx-auto">
           <h3 className="text-[2.5rem] font-semibold font-bricolage text-center text-[#D6B95A] mb-12">Featured Project: MetaJungle</h3>
           <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -73,7 +79,7 @@ export default function Portfolio() {
               <p className="text-[1.5rem] mb-3">Redesigned creator, artist, and collection pages to improve user engagement and visual storytelling. Used Figma for prototyping and collaborated closely with devs to hand off responsive designs.</p>
               <button
                 onClick={() => setShowMetaJungleModal(true)}
-                className="bg-gradient-to-bl from-[#384C37] to-[#6B8E5E] text-[#F0F0EC] px-6 py-2 rounded-full hover:bg-gradient-to-br from-[#384C37] to- text-[1.1rem]"
+                className="bg-[#6B8E5E] text-[#F0F0EC] px-6 py-2 rounded-full hover:bg-[#384C37] text-[1.1rem]"
               >
                 Read Case Study →
               </button>
