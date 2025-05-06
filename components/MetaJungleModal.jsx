@@ -2,6 +2,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 
 export default function MetaJungleModal({ isOpen, onClose }) {
   if (!isOpen) return null;
@@ -96,6 +97,52 @@ export default function MetaJungleModal({ isOpen, onClose }) {
                 This project reflects my ability to own both design and frontend
                 engineering in a product-oriented environment.
               </p>
+            </div>
+            <div className="col-span-2">
+              <Image
+                src="/assets/MJ/Complete.jpg"
+                alt="MetaJungle UI Preview"
+                width={1600}
+                height={960}
+                className="rounded-xl w-full h-auto shadow-3xl mt-[4vw]"
+              />
+              <Image
+                src="/assets/MJ/HomePage2.jpg"
+                alt="MetaJungle UI Preview"
+                width={1600}
+                height={960}
+                className="rounded-xl w-full h-auto shadow-3xl mt-[4vw]"
+              />
+              <Image
+                src="/assets/MJ/ItemPage2.jpg"
+                alt="MetaJungle UI Preview"
+                width={1600}
+                height={960}
+                className="rounded-xl w-full h-auto shadow-3xl mt-[4vw]"
+              />
+              {/* <Image
+                src="/assets/MJ/PriceToggle.jpg"
+                alt="MetaJungle UI Preview"
+                width={1600}
+                height={960}
+                className="rounded-xl w-full h-auto shadow-3xl mt-[4vw]"
+              /> */}
+              <Image
+                src="/assets/MJ/CreatorPage.jpg"
+                alt="MetaJungle UI Preview"
+                width={1600}
+                height={960}
+                className="rounded-xl w-full h-auto shadow-3xl mt-[4vw]"
+              />
+              <Image
+                src="/assets/MJ/DashbordPage.jpg"
+                alt="MetaJungle UI Preview"
+                width={1600}
+                height={960}
+                className="rounded-xl w-full h-auto shadow-3xl mt-[4vw]"
+              />
+
+
             </div>
             <div className="col-span-2 text-[1.2rem] text-gray-800">
               <h4 className="font-bold text-xl mb-4">Design Goals</h4>
