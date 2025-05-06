@@ -82,18 +82,19 @@ export default function MetaJungleModal({ isOpen, onClose }) {
                 focused on improving visual hierarchy, usability, and responsive
                 behavior across screen sizes. Using Figma, I developed a modular
                 design system and scalable layout framework aligned with
-                MetaJungle’s brand and user goals.<br /><br /> In parallel, I worked on the
-                frontend implementation using React and Tailwind CSS,
-                collaborating closely with developers integrating GraphQL APIs,
-                blockchain indexers, and a scalable backend powered by AWS. One
-                of the key challenges was adapting the UI to handle high-volume
-                data — over 20 million blockchain transactions indexed via
-                Cassandra, MongoDB, and Ethereum. I helped translate complex
-                wallet and asset data into digestible, user-friendly visuals,
-                optimizing both layout logic and component structure for
-                performance and maintainability. This project reflects my
-                ability to own both design and frontend engineering in a
-                product-oriented environment.
+                MetaJungle’s brand and user goals.
+                <br />
+                <br /> In parallel, I worked on the frontend implementation
+                using React and Tailwind CSS, collaborating closely with
+                developers integrating GraphQL APIs, blockchain indexers, and a
+                scalable backend powered by AWS. One of the key challenges was
+                adapting the UI to handle high-volume data — over 20 million
+                blockchain transactions indexed via Cassandra, MongoDB, and
+                Ethereum. I helped translate complex wallet and asset data into
+                digestible, user-friendly visuals, optimizing both layout logic
+                and component structure for performance and maintainability.
+                This project reflects my ability to own both design and frontend
+                engineering in a product-oriented environment.
               </p>
             </div>
             <div className="col-span-2 text-[1.2rem] text-gray-800">
