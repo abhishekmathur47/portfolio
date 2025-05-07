@@ -28,6 +28,9 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+html {
+  font-size: 15px;
+}
 
 /* colors: {
   highlight: '#384C37',
