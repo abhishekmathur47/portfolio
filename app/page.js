@@ -47,7 +47,7 @@ export default function Portfolio() {
               <h3 className="text-[2.5rem] font-semibold font-bricolage text-[#1F1F1F]">About Me</h3>
             </div>
             <div className="w-[80%] px-[3vw] py-[3vw]">
-              <p className="text-[1.2rem] text-[#555555]  leading-relaxed tracking-tight text-left">Originally from India, I began my tech career there before moving to the U.S. in 2021 to pursue a Master’s in Information Technology at Arizona State University. I worked across multiple regions, including the Midwest, gaining global experience in building design-led, scalable frontend systems. Now back in India, I continue to bring that international perspective into every product I design and develop. <br /> <br />Whether I’m sketching out component systems or refining visual hierarchies, I enjoy creating interfaces that feel intuitive, purposeful, and globally inspired.</p>
+              <p className="text-[1.3rem] text-[#555555]  leading-relaxed tracking-tight text-left">Originally from India, I began my tech career there before moving to the U.S. in 2021 to pursue a Master’s in Information Technology at Arizona State University. I worked across multiple regions, including the Midwest, gaining global experience in building design-led, scalable frontend systems. Now back in India, I continue to bring that international perspective into every product I design and develop. <br /> <br />Whether I’m sketching out component systems or refining visual hierarchies, I enjoy creating interfaces that feel intuitive, purposeful, and globally inspired.</p>
               <p className="mt-4 text-[1.2rem] text-[#555555]">Tools: *INSERT MARQUE*<br /> Figma, Next.js, Tailwind CSS, Framer Motion, GitHub</p>
             </div>
           </div>
