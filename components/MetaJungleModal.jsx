@@ -11,9 +11,9 @@ export default function MetaJungleModal({ isOpen, onClose }) {
     <div className="fixed inset-0 bg-[#FAFAF8] overflow-y-auto z-[9999]">
       <div className="w-full mx-auto relative">
         {/* Modal Content */}
-        <div className="flex flex-col-2 items-left">
+        <div className="flex flex-col lg:flex-row lg:items-start">
           {/* details wrapper */}
-          <div className="flex flex-col w-[20%] pt-[5vw] pr-[2vw] pb-[1vw] pl-[3vw] h-screen justify-between">
+          <div className="flex flex-col w-full lg:w-[20%] pt-[5vw] pr-[2vw] pb-[1vw] pl-[3vw] h-auto lg:h-screen lg:justify-between">
             <div className="flex flex-col items-left ">
               {/* Case Study Name */}
               <div>
@@ -65,7 +65,7 @@ export default function MetaJungleModal({ isOpen, onClose }) {
 
           {/* content wrapper */}
           <div
-            className="overflow-y-auto max-h-[100vh] grid gap-y-[1.5vw]  px-[3vw] py-[6vw]"
+            className="overflow-y-auto max-h-[100vh] flex-grow w-full lg:w-3/4   px-[3vw] py-[6vw]"
             fs-scrolldisable-element="preserve"
           >
             {/* Details header */}
