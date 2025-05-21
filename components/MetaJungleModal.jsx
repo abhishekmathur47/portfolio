@@ -72,15 +72,15 @@ export default function MetaJungleModal({ isOpen, onClose }) {
 
           {/* content wrapper */}
           <div
-            className="overflow-y-auto max-h-[100vh] flex-grow w-full lg:w-3/4   px-[3vw] py-[6vw]"
+            className="overflow-y-auto max-h-[100vh] flex-grow w-full lg:w-3/4   lg:pl-[8vw] lg:pr-[3vw]  px-[3vw] py-[6vw]"
             fs-scrolldisable-element="preserve"
           >
             {/* Details header - single column on mobile, two columns on large screens */}
-            <div className="grid grid-cols-1 lg:grid-cols-[0.75fr_1fr] gap-6 lg:gap-24 mb-8 lg:mb-12">
-              <h1 className="text-2xl lg:text-[1.8rem] text-[#1F1F1F] tracking-tight">
+            <div className="grid grid-cols-1 lg:grid-cols-[0.75fr_1fr] gap-6 lg:gap-[6vw] mb-8 lg:mb-12">
+              <h1 className="text-2xl text-[1.8rem] text-[#1F1F1F] tracking-tight">
                 Redesigning Core Interfaces for a Web3 Marketplace
               </h1>
-              <p className="text-base lg:text-[1.2rem] text-[#555555] leading-relaxed mt-0 lg:mt-2">
+              <p className="text-base text-[1.2rem] text-[#555555] leading-relaxed mt-0 lg:mt-2">
                 {" "}
                 {/* Adjusted leading and mt */}
                 MetaJungle is a Web3 NFT marketplace that empowers users to

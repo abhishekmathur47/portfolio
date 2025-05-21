@@ -62,7 +62,7 @@ export default function Portfolio() {
             {/* Adjusted padding for responsiveness */}
             <div className="w-full lg:w-[80%] px-4 py-4 md:px-8 md:py-6 lg:px-12 lg:py-8">
               {/* Responsive font size and line height */}
-              <p className="text-base sm:text-lg lg:text-[1.3rem] text-[#555555] leading-relaxed tracking-tight text-left mb-4">
+              <p className="text-base sm:text-xl lg:text-[1.3rem] text-[#555555] leading-relaxed tracking-tight text-left mb-4">
                 Originally from India, I began my tech career there before moving to the U.S. in 2021 to pursue a Master’s in Information Technology at Arizona State University. I worked across multiple regions, including the Midwest, gaining global experience in building design-led, scalable frontend systems. Now back in India, I continue to bring that international perspective into every product I design and develop. <br /> <br />Whether I’m sketching out component systems or refining visual hierarchies, I enjoy creating interfaces that feel intuitive, purposeful, and globally inspired.
               </p>
               {/* Responsive font size */}
@@ -93,9 +93,9 @@ export default function Portfolio() {
             {/* Adjusted padding for responsiveness */}
             <div className="w-full lg:w-[80%] px-4 py-4 md:px-8 md:py-6 lg:px-12 lg:py-8">
               {/* Responsive font sizes */}
-              <h1 className="text-xl sm:text-2xl lg:text-[2rem] font-semibold">MetaJungle</h1>
-              <h4 className="text-lg sm:text-xl lg:text-[1.8rem] text-[#1F1F1F] mb-2">NFT Marketplace UI Design</h4>
-              <p className="text-base sm:text-lg lg:text-[1.2rem] text-[#555555] leading-relaxed tracking-tight mb-4">
+              <h1 className="text-xl sm:text-3xl lg:text-[2rem] font-semibold">MetaJungle</h1>
+              <h4 className="text-lg sm:text-2xl lg:text-[1.8rem] text-[#1F1F1F] mb-2">NFT Marketplace UI Design</h4>
+              <p className="text-base sm:text-xl lg:text-[1.2rem] text-[#555555] leading-relaxed tracking-tight mb-4">
                 Redesigned creator, artist, and collection pages to improve user engagement and visual storytelling. Used Figma for prototyping and collaborated closely with devs to hand off responsive designs.
               </p>
               <button
@@ -234,9 +234,9 @@ export default function Portfolio() {
         <div className="w-full max-w-xl mx-auto text-center">
           {/* Responsive font sizes */}
           <h3 className="text-2xl sm:text-3xl font-semibold mb-6">Let’s Connect</h3>
-          <p className="mb-4 text-base sm:text-lg text-gray-700">Feel free to reach out for freelance work, collaboration, or just to chat design & dev!</p>
-          <p className="text-sm sm:text-base">Email: <a className="underline hover:text-[#D6B95A]" href="mailto:amathu48@asu.edu">amathu48@asu.edu</a></p>
-          <p className="text-sm sm:text-base mt-1">LinkedIn: <a className="underline hover:text-[#D6B95A]" href="https://linkedin.com/in/abhishekmathur47" target="_blank" rel="noopener noreferrer">linkedin.com/in/abhishekmathur47</a></p>
+          <p className="mb-4 text-base sm:text-xl text-gray-700">Feel free to reach out for freelance work, collaboration, or just to chat design & dev!</p>
+          <p className="text-sm sm:text-lg">Email: <a className="underline hover:text-[#D6B95A]" href="mailto:amathu48@asu.edu">amathu48@asu.edu</a></p>
+          <p className="text-sm sm:text-lg mt-1">LinkedIn: <a className="underline hover:text-[#D6B95A]" href="https://linkedin.com/in/abhishekmathur47" target="_blank" rel="noopener noreferrer">linkedin.com/in/abhishekmathur47</a></p>
         </div>
       </section>
     </main>
