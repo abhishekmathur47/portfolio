@@ -9,6 +9,13 @@ export default function MetaJungleModal({ isOpen, onClose }) {
 
   return (
     <div className="fixed inset-0 bg-[#FAFAF8] overflow-y-auto z-[9999]">
+      {/* Mobile Close Button */}
+      <button
+        onClick={onClose}
+        className="lg:hidden fixed top-4 right-4 z-[10000] text-xl text-[#555555] hover:text-[#1F1F1F]"
+      >
+        Close ×
+      </button>
       <div className="w-full mx-auto relative">
         {/* Modal Content */}
         <div className="flex flex-col lg:flex-row lg:items-start">
@@ -56,7 +63,7 @@ export default function MetaJungleModal({ isOpen, onClose }) {
             <div>
               <button
                 onClick={onClose}
-                className="text-[1.5rem] text-[#555555] hover:text-[#1F1F1F]"
+                className="hidden lg:block text-[1.5rem] text-[#555555] hover:text-[#1F1F1F]"
               >
                 Close x
               </button>
@@ -68,12 +75,14 @@ export default function MetaJungleModal({ isOpen, onClose }) {
             className="overflow-y-auto max-h-[100vh] flex-grow w-full lg:w-3/4   px-[3vw] py-[6vw]"
             fs-scrolldisable-element="preserve"
           >
-            {/* Details header */}
-            <div className="grid grid-cols-[0.75fr_1fr] gap-[9vw] mb-[2rem]">
-              <h1 className="text-[1.8rem] text-[#1F1F1F] tracking-tight">
+            {/* Details header - single column on mobile, two columns on large screens */}
+            <div className="grid grid-cols-1 lg:grid-cols-[0.75fr_1fr] gap-6 lg:gap-24 mb-8 lg:mb-12">
+              <h1 className="text-2xl lg:text-[1.8rem] text-[#1F1F1F] tracking-tight">
                 Redesigning Core Interfaces for a Web3 Marketplace
               </h1>
-              <p className="text-[1.2rem] text-[#555555] leading-tight mt-2">
+              <p className="text-base lg:text-[1.2rem] text-[#555555] leading-relaxed mt-0 lg:mt-2">
+                {" "}
+                {/* Adjusted leading and mt */}
                 MetaJungle is a Web3 NFT marketplace that empowers users to
                 explore, track, and manage NFTs through features like wallet
                 reports, creator insights, and collection-level views. The
@@ -141,8 +150,6 @@ export default function MetaJungleModal({ isOpen, onClose }) {
                 height={960}
                 className="rounded-xl w-full h-auto shadow-3xl mt-[4vw]"
               />
-
-
             </div>
             <div className="col-span-2 text-[1.2rem] text-gray-800">
               <h4 className="font-bold text-xl mb-4">Design Goals</h4>
